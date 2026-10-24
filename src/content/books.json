@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfus",
+    "rating": 9,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras urna condimentum pharetra sapien morbi suspendisse."
+  },
+  {
+    "id": "2",
+    "title": "The Final Empire",
+    "author": "Brandon Sanderson",
+    "rating": 7,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras urna condimentum pharetra sapien morbi suspendisse."
+  },
+  {
+    "id": "3",
+    "title": "The Blade Itself",
+    "author": "Joe Abercrombie",
+    "rating": 8,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras urna condimentum pharetra sapien morbi suspendisse."
+  },
+  {
+    "id": "4",
+    "title": "The Will of the Many",
+    "author": "James Islington",
+    "rating": 7,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras urna condimentum pharetra sapien morbi suspendisse."
+  },
+  {
+    "id": "5",
+    "title": "1984",
+    "author": "George Orwell",
+    "rating": 9,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras urna condimentum pharetra sapien morbi suspendisse."
+  }
+]

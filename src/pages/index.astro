@@ -1,8 +1,21 @@
 ---
 import '../styles/global.css'
 import BaseLayout from '../layouts/BaseLayout.astro'
+
+const getUser = () => {
+	return Math.random() < 0.5 ? null : {
+		name: 'mario',
+		email: 'mario@bookbites.com'
+	}
+}
+
+const user = getUser()
 ---
 
 <BaseLayout>
-	<h1 class="font-bold text-5xl uppercase tracking-wider text-slate-900">Home Page</h1>
+	<h1 class="font-bold text-5xl uppercase tracking-wider text-slate-900 mb-20">Home Page</h1>
+	{user && (
+		<h2>Welcome, {user.name}</h2>
+		<p>Logged in as {user.email}</p>
+	)}
 </BaseLayout>

@@ -1,0 +1,29 @@
+---
+import '../../styles/global.css'
+import { getCollection, render } from 'astro:content'
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Likes from '../../components/Likes.svelte'
+
+export async function getStaticPaths() {
+  const books = await getCollection('books')
+
+  return books.map((book: CollectionEntry<'books'>) => ({
+    params: { id: book.id },
+    props: { book }
+  }))
+}
+
+type Props = {
+  book: CollectionEntry<'books'>
+}
+
+const { book } = Astro.props
+const { Content } = await render(book)
+---
+
+<BaseLayout>
+  <h1 class="font-bold text-5xl uppercase tracking-wider text-slate-900 mb-20">{book.data.title}</h1>
+  <Content />
+  <Likes client:visible />
+</BaseLayout>

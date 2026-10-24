@@ -1,8 +1,22 @@
 ---
 import '../../styles/global.css'
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { getCollection } from 'astro:content';
+
+const books = await getCollection('books')
 ---
 
 <BaseLayout>
 		<h1 class="font-bold text-5xl uppercase tracking-wider text-slate-900">Books</h1>
+		<ul class="flex flex-col mt-10 divide-y divide-teal-600">
+			{books.map((book) => (
+				<li>
+					<BookCard book={book} />
+				</li>
+			))}
+		</ul>
+		{books.length < 1 && (
+			<p>No books to show</p>
+		)}
 </BaseLayout>
